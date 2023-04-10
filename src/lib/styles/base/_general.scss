@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as mxn;
+
+body {
+  min-height: 100vh;
+  background-color: var(--md-sys-color-primary-light);
+  font-family: var(--md-sys-typescale-display-large-font-family-name);
+
+  @include mxn.mq(medium) {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    //background-color: green;
+  }
+}
