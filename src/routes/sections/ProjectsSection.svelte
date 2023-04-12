@@ -1,44 +1,43 @@
 <script type="ts">
-  import Card from "$lib/components/Card.svelte";
-  import type { ProjectOverview } from "$lib/interface/projectOverview.interface";
+  import ProjectCard from '$lib/components/ProjectCard.svelte';
+  import type { ProjectOverview } from '$lib/interface/projectOverview.interface';
 
   export let projects: ProjectOverview[];
 </script>
 
-<section>
-  <div class="container">
-    <div class="title-wrapper">
-      <h2 class="headline-large">
-        <span class="color-variant">lets let</span> the<span
-          class="color-variant">.</span
-        >work<br /><span class="color-variant">do the</span> talking
-      </h2>
-    </div>
-    <div class="projects-wrapper">
-      {#each projects as pro}
-        <div class="individual-project">
-          <Card projectOverview={pro} />
-        </div>
-      {/each}
-    </div>
+<section class="container">
+  <h2 class="headline-large on-primary-text">
+    <span class="on-primary-fixed-text">lets let</span> the<span class="on-primary-fixed-text">.</span>work<br /><span
+      class="on-primary-fixed-text">do the</span
+    > talking
+  </h2>
+  <div class="project-cards-wrapper">
+    {#each projects as pro}
+      <ProjectCard projectOverview={pro} />
+    {/each}
   </div>
 </section>
 
 <style type="scss">
-  .title-wrapper {
-    padding-bottom: 3em;
-  }
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
 
-  .headline-large {
-    font-weight: bold;
-  }
+    h2 {
+      font-weight: bold;
+    }
 
-  .color-variant {
-    color: var(--md-sys-color-on-primary-light);
-  }
-  .projects-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3em;
+    .project-cards-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+
+      @include mq('medium') {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8rem 10rem;
+      }
+    }
   }
 </style>

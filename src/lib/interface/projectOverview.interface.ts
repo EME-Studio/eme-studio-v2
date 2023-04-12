@@ -1,9 +1,9 @@
-import type { TagsEnum } from "./enum/tags-enum.enum";
+import type { ProjectCategoryEnum } from './enums/project-cateogry-enum.enum';
 
 export interface ProjectOverview {
   title: string;
   year: number;
   img: string;
-  tag: TagsEnum[];
+  tags: ProjectCategoryEnum[];
   excerpt: string;
 }
