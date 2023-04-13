@@ -1,11 +1,16 @@
-<div class="section">
-  <div class="container">
-    <h1 class="display-large">Welcome to SvelteKit</h1>
-    <p class="body-medium on-primary-text">
-      Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-    </p>
-  </div>
-</div>
+<script type="ts">
+  import { projectsOverviews } from '$lib/content/projects/projectsOverviews';
+  import AboutUsSection from './sections/AboutUsSection.svelte';
+  import FormSection from './sections/FormSection.svelte';
+  import HeroSection from './sections/HeroSection.svelte';
+  import OurClientsSection from './sections/OurClientsSection.svelte';
+  import ProjectsSection from './sections/ProjectsSection.svelte';
+  import OurServicesAndTools from './sections/OurServices/OurServicesAndTools.svelte';
+</script>
 
-<style type="scss">
-</style>
+<HeroSection />
+<ProjectsSection projects={projectsOverviews} />
+<OurClientsSection />
+<AboutUsSection />
+<OurServicesAndTools />
+<FormSection />

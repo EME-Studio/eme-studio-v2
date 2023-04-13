@@ -1,0 +1,14 @@
+input,
+textarea {
+  margin-block: 0.4em 2em;
+  padding: 0.6em;
+}
+
+textarea {
+  min-height: 5rem;
+}
+
+::placeholder {
+  font-weight: lighter;
+  font-size: smaller;
+}

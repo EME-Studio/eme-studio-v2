@@ -2,8 +2,9 @@
 
 body {
   min-height: 100vh;
-  background-color: var(--md-sys-color-primary-light);
+  background-color: var(--md-source);
   font-family: var(--md-sys-typescale-display-large-font-family-name);
+  margin: 0 auto;
 
   @include mxn.mq(medium) {
     display: grid;
