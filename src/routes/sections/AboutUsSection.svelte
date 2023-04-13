@@ -1,6 +1,6 @@
 <section class="background on-background-text">
   <div class="container">
-    <div>
+    <div class="left-column-wrapper">
       <h2 class="headline-large">
         .<span class="inverse-primary-text">about</span><br />_EME<span>.</span>Studio
       </h2>
@@ -22,33 +22,39 @@
   </div>
 </section>
 
-<style type="scss">
+<style lang="scss">
   section {
     .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5em;
-    }
-  }
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
 
-  .headline-large {
-    font-weight: bold;
-  }
-  h2,
-  h4 {
-    padding-bottom: 2em;
-  }
+      @include mq('medium') {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+      }
 
-  .right-column-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      .left-column-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
 
-    h4 {
-      padding-top: 3em;
-    }
-    img {
-      width: 10em;
+        .headline-large {
+          font-weight: bold;
+        }
+      }
+
+      .right-column-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+          max-width: 10rem;
+        }
+      }
     }
   }
 </style>

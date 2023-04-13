@@ -5,12 +5,12 @@
   import HeroSection from './sections/HeroSection.svelte';
   import OurClientsSection from './sections/OurClientsSection.svelte';
   import ProjectsSection from './sections/ProjectsSection.svelte';
-  import WhatWeDoSection from './sections/WhatWeDoSection.svelte';
+  import OurServicesAndTools from './sections/OurServices/OurServicesAndTools.svelte';
 </script>
 
 <HeroSection />
 <ProjectsSection projects={projectsOverviews} />
 <OurClientsSection />
 <AboutUsSection />
-<WhatWeDoSection />
+<OurServicesAndTools />
 <FormSection />

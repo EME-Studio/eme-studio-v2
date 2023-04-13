@@ -1,39 +1,26 @@
-<section>
-  <div class="container">
-    <div class="asterisk-wrapper">
-      <span class="asterisk">*</span>
-    </div>
-    <p class="label-large">web development and design studio</p>
-    <h1 class="display-large">
-      .<span class="color-variant">we</span>
-      develop<br /> /websites
-      <span class="color-variant"> for the <br />21st century</span>
-    </h1>
-  </div>
+<section class="container">
+  <div class="asterisk">*</div>
+  <p class="label-large">web development and design studio</p>
+  <h1 class="display-large">
+    .<span>we</span>
+    develop<br /> /websites
+    <span> for the <br />21st century</span>
+  </h1>
 </section>
 
 <style type="scss">
   .container {
     text-align: center;
+    position: relative;
 
-    .label-large {
-      color: white;
-      font-weight: lighter;
+    h1 {
+      overflow-wrap: break-word;
     }
-    .display-large {
-      font-weight: 900;
-    }
-    .color-variant {
-      color: var(--md-sys-color-on-primary-light);
-    }
-    .asterisk-wrapper {
-      position: relative;
-    }
+
     .asterisk {
       position: absolute;
-      top: -10%;
-      left: 64%;
-      color: var(--md-sys-color-on-primary-light);
+      top: 20%;
+      left: 65%;
       font-size: 150px;
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke: 0.6px;
