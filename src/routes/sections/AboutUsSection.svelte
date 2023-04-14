@@ -1,23 +1,18 @@
 <section class="background on-background-text">
   <div class="container">
     <div class="left-column-wrapper">
-      <h2 class="headline-large">
-        .<span class="inverse-primary-text">about</span><br />_EME<span>.</span>Studio
-      </h2>
-      <h4 class="headline-medium">
-        /<span>we're a</span>multidisciplinary<span>.</span> team
-        <span>focused on building solutions</span>
-      </h4>
+      <h2 class="display-medium">Our team</h2>
+      <h5 class="headline-medium">
+        We're amultidisciplinary team focused on building solutions
+      </h5>
       <p>
-        Our curiosity leads us to live in a state of constant learning. We’re passionate about learning new technologies
-        and embarking on new challenges.
+        Our curiosity leads us to live in a state of constant learning. We’re
+        passionate about learning new technologies and embarking on new
+        challenges.
       </p>
     </div>
     <div class="right-column-wrapper">
-      <img src="/images/memoji3.png" alt="" />
-      <h4 class="headline-medium">
-        _<span>we're web</span>developers<span>. full stacj developers and UX/UI</span>designers
-      </h4>
+      <img src="/images/Albion-ejemplo.jpg" alt="hola" />
     </div>
   </div>
 </section>
@@ -29,20 +24,17 @@
       flex-direction: column;
       gap: 5rem;
 
-      @include mq('medium') {
+      @include mq("medium") {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5rem;
+        padding: 3rem;
       }
 
       .left-column-wrapper {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-
-        .headline-large {
-          font-weight: bold;
-        }
       }
 
       .right-column-wrapper {
@@ -52,7 +44,7 @@
         justify-content: space-between;
 
         img {
-          max-width: 10rem;
+          max-width: 18rem;
         }
       }
     }

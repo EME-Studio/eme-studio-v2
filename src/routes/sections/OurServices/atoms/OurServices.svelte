@@ -1,16 +1,13 @@
 <script lang="ts">
-  import { OUR_SERVICES } from '$lib/config/homePageData';
+  import { OUR_SERVICES } from "$lib/config/homePageData";
 </script>
 
-<div class="main-wrapper">
-  <h2 class="headline-large">
-    .we can <span>help<br /></span>_
-    <span>you</span> with...
-  </h2>
-  <div>
+<div class="main-wrapper on-background-text">
+  <h2 class="display-medium">Our services</h2>
+  <div class="card-wrapper">
     {#each OUR_SERVICES as service}
-      <div>
-        <h4 class="title-large on-primary-text">
+      <div class="card">
+        <h4 class="title-large on-background-text">
           <span>.</span>{service.title}
         </h4>
         <p>
@@ -26,22 +23,17 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
 
-    @include mq('medium') {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-
-    div:last-child {
+    .card-wrapper {
       display: flex;
       flex-direction: column;
       gap: 2rem;
 
-      h4 {
-        margin-bottom: 0.1em;
-      }
-      p {
-        font-weight: lighter;
+      @include mq("medium") {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
       }
     }
   }
