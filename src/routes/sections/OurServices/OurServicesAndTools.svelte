@@ -1,6 +1,6 @@
 <script>
-  import OurServices from './atoms/OurServices.svelte';
-  import OurTools from './atoms/OurTools.svelte';
+  import OurServices from "./atoms/OurServices.svelte";
+  import OurTools from "./atoms/OurTools.svelte";
 </script>
 
 <section class="container">

@@ -1,29 +1,42 @@
 <script lang="ts">
-  import { CLIENTS_LOGOS } from '$lib/config/homePageData';
+  import { CLIENTS_LOGOS } from "$lib/config/homePageData";
 </script>
 
 <section class="container">
-  <h3 class="headline-medium">
-    .<span>some of our</span> /<span>amazing</span>
-    /<span>clients</span>
-  </h3>
+  <h3 class="headline-large on-background-text">Some of our amazing clients</h3>
   <div class="logos-wrapper">
     {#each CLIENTS_LOGOS as logo}
       <img src={logo.imageUrl} alt={logo.alt} />
     {/each}
   </div>
+  <div class="light-blur inverse-surface" />
 </section>
 
-<style type="scss">
+<style lang="scss">
   section {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    align-items: center;
+    position: relative;
+
+    .light-blur {
+      width: 500px;
+      height: 200px;
+      border-radius: 50%;
+      z-index: -1;
+      filter: blur(60px);
+      position: absolute;
+      opacity: 0.8;
+      // background-color: white;
+      position: absolute;
+      top: 115%;
+    }
 
     .logos-wrapper {
       display: flex;
       flex-direction: row;
-      gap: 3rem;
+      gap: 6rem;
       flex-wrap: wrap;
 
       img {

@@ -1,31 +1,29 @@
 <section class="container">
-  <div class="asterisk">*</div>
-  <p class="label-large">web development and design studio</p>
-  <h1 class="display-large">
-    .<span>we</span>
-    develop<br /> /websites
-    <span> for the <br />21st century</span>
+  <h1 class="display-large on-background-text">
+    We develop<br />websites for the <br />21st century
   </h1>
+  <p class="on-background-text">
+    NuxtLabs is the bridge between open-source software development and
+    enterprise-grade web services. We provide a complete set of solutions to
+    every company that wants to harness the full power of Vue and Nuxt.
+  </p>
 </section>
 
 <style type="scss">
   .container {
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
-    h1 {
-      overflow-wrap: break-word;
+    @include mq("medium") {
+      max-width: 60%;
     }
 
-    .asterisk {
-      position: absolute;
-      top: 20%;
-      left: 65%;
-      font-size: 150px;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 0.6px;
-      font-weight: bold;
-      z-index: -1;
+    h1,
+    p {
+      overflow-wrap: break-word;
     }
   }
 </style>
