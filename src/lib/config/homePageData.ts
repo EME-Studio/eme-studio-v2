@@ -50,3 +50,16 @@ export const OUR_TOOLS_LOGOS = [
     alt: "Apple logo",
   },
 ];
+
+export const NAV_ELEMENTS = [
+  {
+    name: "Projects",
+    url: "/page1",
+    prefetch: true,
+  },
+  {
+    name: "Team",
+    url: "/page2",
+    prefetch: true,
+  },
+];
