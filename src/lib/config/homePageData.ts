@@ -63,3 +63,18 @@ export const NAV_ELEMENTS = [
     prefetch: true,
   },
 ];
+
+export const FOOTER_ELEMENTS = [
+  {
+    name: "Instagram",
+    url: "/instagram.com",
+  },
+  {
+    name: "Instagram",
+    url: "/instagram.com",
+  },
+  {
+    name: "Instagram",
+    url: "/instagram.com",
+  },
+];

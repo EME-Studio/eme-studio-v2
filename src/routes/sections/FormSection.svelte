@@ -21,7 +21,7 @@
       >
       <textarea name="name" class="input" placeholder="I have plenty of them" />
 
-      <button class=".inverse-on-surface-text">Send my idea</button>
+      <button class="inverse-on-surface-text">Send my idea</button>
     </form>
   </div>
 </section>
@@ -32,6 +32,7 @@
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+
     h2 {
       text-align: center;
     }
@@ -39,6 +40,7 @@
     form {
       display: flex;
       flex-direction: column;
+
       input,
       textarea {
         background-color: transparent;

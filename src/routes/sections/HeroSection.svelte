@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
     @include mq("medium") {
       max-width: 60%;
     }

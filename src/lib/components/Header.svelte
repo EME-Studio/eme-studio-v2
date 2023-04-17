@@ -1,51 +1,95 @@
 <script type="ts">
   import { NAV_ELEMENTS } from "$lib/config/homePageData";
+
+  import { fly } from "svelte/transition";
+
+  import AnimatedHumburger from "./AnimatedHumburger.svelte";
+
+  export let open = false;
+  export let onClick = (): void => {
+    open = !open;
+
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "scroll";
+    }
+  };
 </script>
 
 <header>
-  <section>
-    <div class="container surface-tint">
-      <a href="/">EME STUDIO</a>
+  <section class="container">
+    <div class="desktop-menu surface-tint header">
+      <a href="/" class="on-secondary-text">EME STUDIO</a>
       <nav>
         <ul>
           {#each NAV_ELEMENTS as navElements}
-            <a href="/">
-              <li>
-                {navElements.name}
-              </li>
-            </a>
+            <li>
+              <a class="on-secondary-text" href="/">{navElements.name}</a>
+            </li>
           {/each}
         </ul>
       </nav>
-      <button class="background"><p class="label-small">Contact us</p></button>
+      <a href="/home"
+        ><button class="background on-background-text label-large"
+          >Contact us</button
+        ></a
+      >
+    </div>
+    <div class="mobile-menu">
+      <AnimatedHumburger {open} {onClick} />
+      {#if open}
+        <nav transition:fly={{ y: -200, duration: 400 }}>
+          {#each NAV_ELEMENTS as navElements}
+            <li>
+              <a class="on-background-text body-large" href="/"
+                >{navElements.name}</a
+              >
+            </li>
+          {/each}
+        </nav>
+      {/if}
     </div>
   </section>
 </header>
 
 <style lang="scss">
   .container {
-    display: flex;
-    flex-direction: row;
-    max-width: 60%;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1rem;
+    max-width: 50%;
 
-    ul {
-      list-style: none;
+    .desktop-menu {
+      @include mq("medium") {
+        display: flex;
+        flex-direction: row;
+        padding: 0.4rem;
+        border-radius: 1.5rem;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      button {
+        border-radius: 2rem;
+        padding: 1em;
+      }
+
+      display: none;
     }
-    li {
-      display: inline;
-    }
-    a {
-      text-decoration: none;
-    }
-    button {
-      border-radius: 0.8em;
-      color: var(--md-sys-color-on-background);
-      padding: 0.7em;
+
+    .mobile-menu {
+      @include mq("medium") {
+        display: none;
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+      }
     }
   }
 </style>
