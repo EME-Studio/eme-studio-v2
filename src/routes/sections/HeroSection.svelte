@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container-small">
   <h1 class="display-large on-background-text">
     We develop<br />websites for the <br />21st century
   </h1>
@@ -10,16 +10,12 @@
 </section>
 
 <style type="scss">
-  .container {
+  .container-small {
     text-align: center;
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
-    @include mq("medium") {
-      max-width: 60%;
-    }
 
     h1,
     p {

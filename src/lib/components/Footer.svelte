@@ -2,30 +2,21 @@
   import { FOOTER_ELEMENTS } from "$lib/config/homePageData";
 </script>
 
-<section class="surface-tint">
-  <div class="container">
-    <div class="footer-line" />
+<footer class="surface-tint">
+  <div class="container-small">
     <div class="footer-links on-primary-text">
-      {#each FOOTER_ELEMENTS as footElements}
-        <a class="inverse-on-surface-text" href={footElements.url}
-          >{footElements.name}</a
-        >
+      {#each FOOTER_ELEMENTS as element}
+        <a class="inverse-on-surface-text" href={element.url}>{element.name}</a>
       {/each}
     </div>
   </div>
-</section>
+</footer>
 
 <style lang="scss">
-  .container {
+  .container-small {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 50%;
-
-    .footer-line {
-      border-bottom: 0.1em solid;
-      opacity: 20%;
-    }
 
     .footer-links {
       @include mq("medium") {
@@ -36,6 +27,8 @@
         gap: 4rem;
       }
 
+      border-top: 0.1em solid;
+      opacity: 20%;
       display: flex;
       flex-direction: column;
       align-items: center;
