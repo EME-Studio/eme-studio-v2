@@ -41,6 +41,7 @@
       line-clamp: 5;
       -webkit-box-orient: vertical;
     }
+
     span {
       border: var(--md-sys-color-primary) 1px solid;
       border-radius: 0.8rem;

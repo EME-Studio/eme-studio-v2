@@ -47,6 +47,7 @@
         border-width: 0.1rem;
         border-radius: 0.5rem;
       }
+
       button {
         border-radius: 0.5rem;
       }

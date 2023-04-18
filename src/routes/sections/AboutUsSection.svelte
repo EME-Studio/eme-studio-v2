@@ -5,11 +5,6 @@
       <h5 class="headline-medium">
         We're amultidisciplinary team focused on building solutions
       </h5>
-      <p>
-        Our curiosity leads us to live in a state of constant learning. We’re
-        passionate about learning new technologies and embarking on new
-        challenges.
-      </p>
     </div>
     <div class="right-column-wrapper">
       <img src="/images/Albion-ejemplo.jpg" alt="hola" />

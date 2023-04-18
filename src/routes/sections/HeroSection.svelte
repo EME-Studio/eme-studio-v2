@@ -17,6 +17,7 @@
     flex-direction: column;
     gap: 2rem;
 
+
     h1,
     p {
       overflow-wrap: break-word;

@@ -9,7 +9,7 @@
       <img src={logo.imageUrl} alt={logo.alt} />
     {/each}
   </div>
-  <div class="shadow" />
+  <div class="light-blur inverse-surface" />
 </section>
 
 <style lang="scss">
@@ -20,7 +20,7 @@
     align-items: center;
     position: relative;
 
-    .shadow {
+    .light-blur {
       width: 500px;
       height: 200px;
       border-radius: 50%;
@@ -28,7 +28,7 @@
       filter: blur(60px);
       position: absolute;
       opacity: 0.8;
-      background-color: white;
+      // background-color: white;
       position: absolute;
       top: 115%;
     }
