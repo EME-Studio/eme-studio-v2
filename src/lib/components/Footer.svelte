@@ -27,7 +27,7 @@
         gap: 4rem;
       }
 
-      border-top: 0.1em solid;
+      border-top: 0.1rem solid;
       opacity: 20%;
       display: flex;
       flex-direction: column;

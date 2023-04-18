@@ -65,10 +65,12 @@
         ul {
           list-style: none;
         }
+
         li {
           display: inline;
           padding: 1rem;
         }
+
         a {
           text-decoration: none;
         }
