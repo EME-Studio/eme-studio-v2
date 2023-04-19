@@ -4,19 +4,24 @@
   export let projectOverview: ProjectOverview;
 </script>
 
-<div class="main-wrapper card">
-  <h3 class="headline-medium primary-text">{projectOverview.title}</h3>
-  <h4 class="headline-small on-background-text">{projectOverview.year}</h4>
-  <img src={projectOverview.img} alt={projectOverview.title} />
-  <div class="tags-wrapper">
-    {#each projectOverview.tags as tag}
-      <span class="primary-text">{tag}</span>
-    {/each}
+<a href="/catalog/{projectOverview.url}">
+  <div class="main-wrapper card">
+    <h3 class="headline-medium primary-text">{projectOverview.title}</h3>
+    <h4 class="headline-small on-background-text">{projectOverview.year}</h4>
+    <img src={projectOverview.img} alt={projectOverview.title} />
+    <div class="tags-wrapper">
+      {#each projectOverview.tags as tag}
+        <span class="primary-text">{tag}</span>
+      {/each}
+    </div>
+    <p class="on-background-text">{projectOverview.excerpt}</p>
   </div>
-  <p class="on-background-text">{projectOverview.excerpt}</p>
-</div>
+</a>
 
 <style type="scss">
+  a {
+    text-decoration: none;
+  }
   .main-wrapper {
     display: flex;
     flex-direction: column;
