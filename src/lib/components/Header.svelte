@@ -37,7 +37,7 @@
       <nav transition:fly={{ y: -200, duration: 400 }}>
         {#each NAV_ELEMENTS as navElements}
           <li>
-            <a class="on-background-text body-large" href="/"
+            <a class="on-background-text display-large" href="/"
               >{navElements.name}</a
             >
           </li>
@@ -87,6 +87,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      nav {
+        height: 100vh;
+      }
 
       li {
         display: flex;

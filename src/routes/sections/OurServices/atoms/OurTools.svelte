@@ -35,7 +35,7 @@
     div:last-child {
       display: flex;
       gap: 2rem;
-      align-items: end;
+      align-items: flex-end;
       flex-wrap: wrap;
 
       img {
