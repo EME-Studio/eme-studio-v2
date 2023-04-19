@@ -1,4 +1,4 @@
-import type { ProjectCategoryEnum } from "./enums/project-cateogry-enum.enum";
+import type { ProjectCategoryEnum } from "./enums/project-cateogry.enum";
 
 export interface ProjectOverview {
   title: string;

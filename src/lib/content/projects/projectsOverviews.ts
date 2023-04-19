@@ -1,5 +1,5 @@
-import type { ProjectOverview } from "../../types/projectOverview.interface";
-import { ProjectCategoryEnum } from "$lib/types/enums/project-cateogry-enum.enum";
+import type { ProjectOverview } from "../../types/project-overview.interface";
+import { ProjectCategoryEnum } from "$lib/types/enums/project-cateogry.enum";
 
 export const projectsOverviews: ProjectOverview[] = [
   {
