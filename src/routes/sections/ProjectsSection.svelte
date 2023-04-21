@@ -1,8 +1,10 @@
 <script type="ts">
   import ProjectCard from "$lib/components/ProjectCard.svelte";
-  import type { ProjectOverview } from "$lib/types/projectOverview.interface";
+  import type { ProjectOverview } from "src/lib/types/project-overview.interface.ts";
 
   export let projects: ProjectOverview[];
+
+  let current = projects[0].title;
 </script>
 
 <section class="container">
@@ -12,7 +14,12 @@
   </h4>
   <div class="project-cards-wrapper">
     {#each projects as pro}
-      <ProjectCard projectOverview={pro} />
+      <div
+        class="{current === pro.title ? 'selected' : ''}project-card"
+        on:pointerover={() => (current = pro.title)}
+      >
+        <ProjectCard projectOverview={pro} />
+      </div>
     {/each}
   </div>
 </section>
@@ -27,6 +34,15 @@
       display: flex;
       flex-direction: column;
       gap: 4rem;
+
+      .selectedproject-card {
+        opacity: 1;
+      }
+
+      .project-card {
+        opacity: 0.6;
+        transition: opacity 1s;
+      }
 
       @include mq("medium") {
         display: grid;
