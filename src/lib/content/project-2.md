@@ -1,8 +1,17 @@
 ---
-title: Project Two
-date: "2021-12-14"
+title: Project One
+date: 2021
+excerpt: Le projet M2JS vise à réécrire complètement le MMORPG coréenMetin2 pour qu’il puisse être joué depuis un navigateur ou un mobile.
+videolink: "/images/web-design-project.webp"
 ---
 
-Project2
+## What was this about
 
-**Nice to meet you!**
+Here's some information about the amazing project we worked for over 4 months trying to bla bla bla.
+
+### Tech we used
+
+1. First Item
+2. Second item
+3. Third item
+4. Fourth item

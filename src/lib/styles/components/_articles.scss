@@ -1,0 +1,38 @@
+@use "./../design-variables";
+
+article {
+  margin: 3rem 0;
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ol,
+  li {
+    @extend .on-background-text;
+    margin: 1rem 0;
+  }
+
+  h1 {
+    @extend .display-large;
+  }
+
+  h2 {
+    @extend .display-medium;
+  }
+
+  h3 {
+    @extend .display-small;
+  }
+
+  p {
+    @extend .body-large;
+  }
+
+  ol {
+    li {
+      @extend .on-background-text;
+      list-style: none;
+    }
+  }
+}

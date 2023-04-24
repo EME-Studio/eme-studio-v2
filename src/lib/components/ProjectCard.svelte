@@ -1,5 +1,5 @@
 <script type="ts">
-  import type { ProjectOverview } from "$lib/interface/projectOverview.interface";
+  import type { ProjectOverview } from "$lib/interface/project-overview.interface";
 
   export let projectOverview: ProjectOverview;
 </script>
