@@ -18,6 +18,11 @@
         class="{current === pro.title ? 'selected' : ''}project-card"
         on:pointerover={() => (current = pro.title)}
       >
+        <!-- <div
+        class="project-card"
+        class:selectedproject-card={current === pro.title}
+        on:pointerover={() => (current = pro.title)}
+      > -->
         <ProjectCard projectOverview={pro} />
       </div>
     {/each}
@@ -38,6 +43,7 @@
       .selectedproject-card {
         opacity: 1;
         transition: opacity 1s;
+        background-color: red;
       }
 
       .project-card {
