@@ -15,6 +15,7 @@
   <div class="project-cards-wrapper">
     {#each projects as pro}
       <div
+        class:right-column={projects.indexOf(pro) % 2 != 0}
         class:low-opacity={current !== pro.title}
         on:pointerover={() => (current = pro.title)}
       >
