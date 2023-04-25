@@ -1,8 +1,7 @@
 import preprocess from "svelte-preprocess";
-import adapter from "@sveltejs/adapter-auto";
 import { mdsvex } from "mdsvex";
 import sveltePreprocess from "svelte-preprocess";
-import adapter from "@sveltejs/adapter-cloudflare";
+import cloudflare from "@sveltejs/adapter-cloudflare";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -23,13 +22,7 @@ const config = {
   ],
 
   kit: {
-    adapter: adapter({
-      // See below for an explanation of these options
-      routes: {
-        include: ["/*"],
-        exclude: ["<all>"],
-      },
-    }),
+    adapter: cloudflare(),
   },
 };
 
