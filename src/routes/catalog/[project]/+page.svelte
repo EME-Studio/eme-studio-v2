@@ -1,7 +1,5 @@
 <script lang="ts">
   export let data;
-
-  console.log(data.videolink);
 </script>
 
 <section class="container">
@@ -13,7 +11,7 @@
     </div>
     <img src={data.videolink} alt="example" class="image" />
   </div>
-  <article class="prueba">
+  <article>
     <svelte:component this={data.content} />
   </article>
 </section>
