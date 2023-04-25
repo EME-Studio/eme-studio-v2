@@ -11,7 +11,7 @@
 <style lang="scss">
   .circles-wrapper {
     position: relative;
-    top: -500px;
+    top: -415px;
     margin-bottom: -1000px;
     height: 1000px;
     width: 100%;

@@ -30,6 +30,10 @@
       flex-direction: column;
       gap: 2rem;
 
+      .card {
+        justify-content: center;
+      }
+
       @include mq("medium") {
         display: flex;
         flex-direction: row;
