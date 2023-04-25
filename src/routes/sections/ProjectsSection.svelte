@@ -1,8 +1,9 @@
 <script type="ts">
   import ProjectCard from "$lib/components/ProjectCard.svelte";
-  import type { ProjectOverview } from "$lib/types/projectOverview.interface";
+  import type { ProjectOverview } from "$lib/types/project-overview.interface";
 
   export let projects: ProjectOverview[];
+  let totalProjects = projects.length;
 </script>
 
 <section class="container">
@@ -12,7 +13,9 @@
   </h4>
   <div class="project-cards-wrapper">
     {#each projects as pro}
-      <ProjectCard projectOverview={pro} />
+      <div class:right-column={projects.indexOf(pro) % 2 != 0}>
+        <ProjectCard projectOverview={pro} />
+      </div>
     {/each}
   </div>
 </section>
@@ -31,7 +34,11 @@
       @include mq("medium") {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 8rem 10rem;
+        gap: 0 10rem;
+
+        .right-column {
+          margin-top: 100px;
+        }
       }
     }
   }
