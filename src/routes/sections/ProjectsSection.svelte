@@ -15,14 +15,9 @@
   <div class="project-cards-wrapper">
     {#each projects as pro}
       <div
-        class="{current === pro.title ? 'selected' : ''}project-card"
+        class:low-opacity={current !== pro.title}
         on:pointerover={() => (current = pro.title)}
       >
-        <!-- <div
-        class="project-card"
-        class:selectedproject-card={current === pro.title}
-        on:pointerover={() => (current = pro.title)}
-      > -->
         <ProjectCard projectOverview={pro} />
       </div>
     {/each}
@@ -40,13 +35,7 @@
       flex-direction: column;
       gap: 4rem;
 
-      .selectedproject-card {
-        opacity: 1;
-        transition: opacity 1s;
-        background-color: red;
-      }
-
-      .project-card {
+      .low-opacity {
         opacity: 0.6;
         transition: opacity 1s;
       }
