@@ -1,6 +1,6 @@
 <script type="ts">
   import ProjectCard from "$lib/components/ProjectCard.svelte";
-  import type { ProjectOverview } from "src/lib/types/project-overview.interface.ts";
+  import type { ProjectOverview } from "$lib/types/project-overview.interface.ts";
 
   export let projects: ProjectOverview[];
 

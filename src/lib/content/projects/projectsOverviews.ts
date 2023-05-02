@@ -3,13 +3,13 @@ import { ProjectCategoryEnum } from "$lib/types/enums/project-cateogry.enum";
 
 export const projectsOverviews: ProjectOverview[] = [
   {
-    title: "Project-1",
-    year: 2021,
-    url: "project-1",
-    img: "/images/web-design-project.webp",
+    title: "Emerald Academy",
+    year: 2023,
+    url: "emerald-academy",
+    img: "/images/videoExample.mov",
     tags: [ProjectCategoryEnum.Development, ProjectCategoryEnum.WebsiteDesign],
     excerpt:
-      "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem",
+      "Emerald Academy is the most active community for learning and building on the flow blockchain. Our main challenge was to create a great platform full of content: bootcamps, courses, roadmaps in several languages, accessible for everyone",
   },
   {
     title: "Project-2",
