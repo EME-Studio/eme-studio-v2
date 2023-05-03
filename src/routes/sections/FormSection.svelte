@@ -83,10 +83,14 @@
         border-radius: 0.5rem;
       }
 
-      input:last-of-type {
+      input[type="submit"] {
         border-radius: 0.5rem;
         text-decoration: none;
         text-align: center;
+      }
+
+      input[type="submit"]:hover {
+        cursor: pointer;
       }
     }
   }
