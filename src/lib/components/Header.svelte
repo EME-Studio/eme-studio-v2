@@ -55,7 +55,6 @@
     margin-inline: auto;
 
     img {
-      display: flex;
       max-width: 3rem;
     }
 

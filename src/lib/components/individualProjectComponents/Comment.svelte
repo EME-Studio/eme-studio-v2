@@ -41,8 +41,8 @@
       }
 
       .image {
-        height: 50px;
-        width: 50px;
+        max-width: 5rem;
+        aspect-ratio: 1/1;
         border-radius: 50%;
       }
     }

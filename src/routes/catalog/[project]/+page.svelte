@@ -2,24 +2,25 @@
   import ProjectCategoryTag from "$lib/components/ProjectCategoryTag.svelte";
 
   export let data;
+  console.log(data);
 </script>
 
 <section>
   <div class="container-small">
     <div class="title">
-      <h1 class="display-large on-background-text">{data.title}</h1>
-      <h4 class="on-background-text">{data.date}</h4>
+      <h1 class="display-large on-background-text">{data.metadata.title}</h1>
+      <h4 class="on-background-text">{data.metadata.date}</h4>
       <div class="tags-wrapper">
-        {#each data.tags as tag}
+        {#each data.metadata.tags as tag}
           <ProjectCategoryTag title={tag} />
         {/each}
       </div>
-      <p class="on-background-text">{data.excerpt}</p>
+      <p class="on-background-text">{data.metadata.excerpt}</p>
     </div>
   </div>
 </section>
 <section>
-  <img src={data.videolink} alt="example" />
+  <img src={data.metadata.videolink} alt="example" />
   <article>
     <div class="container-small">
       <svelte:component this={data.content} />

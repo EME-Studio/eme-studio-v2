@@ -8,7 +8,7 @@ tags: ["Development", "Development"]
 
 <script>
 import ProjectInfoCard from '$lib/components/individualProjectComponents/ProjectInfoCard.svelte'
-import Comments from '$lib/components/individualProjectComponents/Comments.svelte'
+import Comment from '$lib/components/individualProjectComponents/Comment.svelte'
 
 </script>
 
@@ -16,4 +16,4 @@ import Comments from '$lib/components/individualProjectComponents/Comments.svelt
 
 <ProjectInfoCard title="Tech stack" description="We use Svelte, a framework beating out the rest on UI and JS speed, the one that best meets the API of the web" img="/images/Emerald-Academy-Chapter.png" />
 
-<Comments comment="Wow, what an awesome @tailwindcss intro video by @fireship_dev" img="/images/Jacob-Profile-Pic.jpeg" username="@Jacob" name="Jacob Tucker"/>
+<Comment comment="Wow, what an awesome @tailwindcss intro video by @fireship_dev" img="/images/Jacob-Profile-Pic.jpeg" username="@Jacob" name="Jacob Tucker"/>
