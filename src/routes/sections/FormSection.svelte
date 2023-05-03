@@ -21,7 +21,9 @@
       >
       <textarea name="name" class="input" placeholder="I have plenty of them" />
 
-      <button class="inverse-on-surface-text">Send my idea</button>
+      <a class="button background on-background-text" href="send-idea"
+        >Send my idea</a
+      >
     </form>
   </div>
 </section>
@@ -48,8 +50,10 @@
         border-radius: 0.5rem;
       }
 
-      button {
+      a {
         border-radius: 0.5rem;
+        text-decoration: none;
+        text-align: center;
       }
     }
   }

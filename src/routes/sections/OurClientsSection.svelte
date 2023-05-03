@@ -28,7 +28,6 @@
       filter: blur(60px);
       position: absolute;
       opacity: 0.8;
-      // background-color: white;
       position: absolute;
       top: 115%;
     }

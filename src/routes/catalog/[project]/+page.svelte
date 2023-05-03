@@ -9,7 +9,7 @@
       <h4 class="on-background-text">{data.date}</h4>
       <p class="on-background-text">{data.excerpt}</p>
     </div>
-    <img src={data.videolink} alt="example" />
+    <img src={data.videolink} alt="example" class="image" />
   </div>
   <article>
     <svelte:component this={data.content} />
@@ -25,11 +25,6 @@
         gap: 6rem;
         align-items: center;
         justify-content: center;
-      }
-
-      img {
-        border-radius: 0.8rem;
-        width: 100%;
       }
 
       display: flex;

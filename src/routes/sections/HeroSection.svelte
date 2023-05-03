@@ -1,3 +1,7 @@
+<script>
+  import Orbits from "$lib/components/Orbits.svelte";
+</script>
+
 <section class="container-small">
   <h1 class="display-large on-background-text">
     We develop<br />websites for the <br />21st century
@@ -8,12 +12,13 @@
     enterprise-grade web services. We provide a complete set of solutions to
     every company that wants to harness the full power of Vue and Nuxt.
   </p>
+
+  <Orbits />
 </section>
 
 <style type="scss">
   .container-small {
     text-align: center;
-    position: relative;
     display: flex;
     flex-direction: column;
     gap: 2rem;

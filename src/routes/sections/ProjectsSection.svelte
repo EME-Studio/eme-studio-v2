@@ -1,6 +1,6 @@
 <script type="ts">
   import ProjectCard from "$lib/components/ProjectCard.svelte";
-  import type { ProjectOverview } from "src/lib/types/project-overview.interface.ts";
+  import type { ProjectOverview } from "$lib/types/project-overview.interface.ts";
 
   export let projects: ProjectOverview[];
 
@@ -15,6 +15,7 @@
   <div class="project-cards-wrapper">
     {#each projects as pro}
       <div
+        class:right-column={projects.indexOf(pro) % 2 != 0}
         class:low-opacity={current !== pro.title}
         on:pointerover={() => (current = pro.title)}
       >
@@ -43,7 +44,11 @@
       @include mq("medium") {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 8rem 10rem;
+        gap: 0 10rem;
+
+        .right-column {
+          margin-top: 100px;
+        }
       }
     }
   }

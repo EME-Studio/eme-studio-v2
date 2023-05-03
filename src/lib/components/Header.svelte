@@ -17,7 +17,9 @@
 
 <header>
   <div class="desktop-menu surface-tint">
-    <a href="/" class="on-secondary-text">EME STUDIO</a>
+    <a href="/" class="on-secondary-text"
+      ><img src="/images/EMEstudio_iso_negro.png" alt="logo" /></a
+    >
     <nav>
       <ul>
         {#each NAV_ELEMENTS as element}
@@ -51,6 +53,11 @@
   header {
     padding-top: 3rem;
     margin-inline: auto;
+
+    img {
+      display: flex;
+      max-width: 3rem;
+    }
 
     .desktop-menu {
       @include mq("medium") {
