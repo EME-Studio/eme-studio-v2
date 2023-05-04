@@ -11,10 +11,10 @@
 <style lang="scss">
   div {
     position: relative;
-  }
 
-  video {
-    width: 100%;
-    border-radius: 0.5rem;
+    video {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
   }
 </style>

@@ -1,40 +1,58 @@
 <script lang="ts">
+  import ProjectCategoryTag from "$lib/components/ProjectCategoryTag.svelte";
+
   export let data;
+  console.log(data);
 </script>
 
-<section class="container">
-  <div class="project-resumee">
+<section>
+  <div class="container-small">
     <div class="title">
-      <h1 class="display-large on-background-text">{data.title}</h1>
-      <h4 class="on-background-text">{data.date}</h4>
-      <p class="on-background-text">{data.excerpt}</p>
+      <h1 class="display-large on-background-text">{data.metadata.title}</h1>
+      <h4 class="on-background-text">{data.metadata.date}</h4>
+      <div class="tags-wrapper">
+        {#each data.metadata.tags as tag}
+          <ProjectCategoryTag title={tag} />
+        {/each}
+      </div>
+      <p class="on-background-text">{data.metadata.excerpt}</p>
     </div>
-    <img src={data.videolink} alt="example" class="image" />
   </div>
+</section>
+<section>
+  <img src={data.metadata.videolink} alt="example" />
   <article>
-    <svelte:component this={data.content} />
+    <div class="container-small">
+      <svelte:component this={data.content} />
+    </div>
   </article>
 </section>
 
 <style lang="scss">
-  .container {
-    .project-resumee {
-      @include mq("medium") {
+  .container-small {
+    padding: 2rem;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+
+      .tags-wrapper {
         display: flex;
         flex-direction: row;
-        gap: 6rem;
-        align-items: center;
+        gap: 1.4rem;
         justify-content: center;
       }
 
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+      p {
+        overflow-wrap: break-word;
+      }
     }
+  }
 
-    h1,
-    p {
-      overflow-wrap: break-word;
-    }
+  img {
+    width: 100%;
+    max-height: 60rem;
   }
 </style>
