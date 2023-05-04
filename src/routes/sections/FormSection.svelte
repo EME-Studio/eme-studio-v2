@@ -1,10 +1,15 @@
 <script type="ts">
   import emailjs from "@emailjs/browser";
-  import { PUBLIC_APIKEY } from "$env/static/public";
+  import { PUBLIC_EMAIL_JS_KEY } from "$env/static/public";
 
   function sendEmail(e) {
     emailjs
-      .sendForm("contact_service", "contact_form", e.target, PUBLIC_APIKEY)
+      .sendForm(
+        "contact_service",
+        "contact_form",
+        e.target,
+        PUBLIC_EMAIL_JS_KEY
+      )
       .then(
         (result) => {
           console.log("SUCCESS!", result.text);
@@ -17,7 +22,6 @@
 </script>
 
 <section class="surface-tint">
-  {PUBLIC_APIKEY}
   <div class="container">
     <h2 class="headline-large">
       Let's bring it <br /> to life together
