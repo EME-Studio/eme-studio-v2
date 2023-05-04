@@ -27,8 +27,8 @@
         gap: 4rem;
       }
 
-      border-top: 0.1rem solid;
-      opacity: 20%;
+      border-top: 0.1rem inset;
+      opacity: 70%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -36,6 +36,7 @@
 
       a {
         text-decoration: none;
+        color: var(--md-sys-color-on-secondary-fixed);
       }
     }
   }

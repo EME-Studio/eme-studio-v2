@@ -9,7 +9,7 @@
       we use modern tools to help us craft the best experience for your users
     </p>
   </div>
-  <div>
+  <div class="logos-wrapper">
     {#each OUR_TOOLS_LOGOS as logo}
       <img src={logo.imageUrl} alt={logo.alt} />
     {/each}
@@ -30,16 +30,17 @@
       p {
         width: 70%;
       }
-    }
 
-    div:last-child {
-      display: flex;
-      gap: 2rem;
-      align-items: flex-end;
-      flex-wrap: wrap;
+      div:last-child {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-around;
+      }
 
       img {
-        max-width: 3rem;
+        max-height: 4rem;
+        max-width: 7rem;
+        aspect-ratio: inherit;
       }
     }
   }

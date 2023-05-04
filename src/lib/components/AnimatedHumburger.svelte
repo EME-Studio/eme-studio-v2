@@ -41,6 +41,7 @@
     overflow: hidden;
     background: none;
     border: none;
+    box-shadow: none;
 
     svg {
       transition: transform var(--transition-duration);
