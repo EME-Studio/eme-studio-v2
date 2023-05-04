@@ -2,23 +2,15 @@
   export let title: string;
   export let description: string;
   export let img: string;
-  export let align: boolean = false;
+  export let inverse: false;
 </script>
 
-<div class="main-wrapper">
-  {#if align}
-    <div>
-      <h3 class="headline-small primary-text">{title}</h3>
-      <h4 class="body-large on-background-text">{description}</h4>
-    </div>
-    <img src={img} alt={title} class="img-rounded" />
-  {:else}
-    <img src={img} alt={title} class="img-rounded" />
-    <div class="center-aligned-text">
-      <h3 class="headline-small primary-text">{title}</h3>
-      <h4 class="body-large on-background-text">{description}</h4>
-    </div>
-  {/if}
+<div class:invert-grid={inverse} class="main-wrapper">
+  <img src={img} alt={title} class="img-rounded" />
+  <div class="prueba">
+    <h3 class="headline-small primary-text">{title}</h3>
+    <h4 class="body-large on-background-text">{description}</h4>
+  </div>
 </div>
 
 <style lang="scss">
@@ -28,16 +20,21 @@
       grid-template-columns: 1fr 1fr;
       align-items: center;
       gap: 5rem;
-      text-align: right;
+      text-align: left;
       margin: 5rem 0;
     }
 
     display: flex;
     flex-direction: column;
     margin: 3rem 0;
+  }
 
-    .center-aligned-text {
-      text-align: left;
+  @include mq("medium") {
+    .invert-grid {
+      .prueba {
+        order: -1;
+      }
+      text-align: right;
     }
   }
 </style>
