@@ -34,12 +34,12 @@
       div:last-child {
         display: flex;
         gap: 2rem;
-        justify-content: space-around;
+        align-items: center;
       }
 
       img {
-        max-height: 4rem;
-        max-width: 7rem;
+        max-height: 3rem;
+        max-width: 6rem;
         aspect-ratio: inherit;
       }
     }
