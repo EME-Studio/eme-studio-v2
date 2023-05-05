@@ -1,7 +1,6 @@
 <script type="ts">
   import type { ProjectOverview } from "$lib/types/project-overview.interface";
   import Video from "$lib/components/Video.svelte";
-
   export let projectOverview: ProjectOverview;
 </script>
 
