@@ -2,6 +2,7 @@
   import { NAV_ELEMENTS } from "$lib/config/homePageData";
   import { fly } from "svelte/transition";
   import AnimatedHumburger from "./AnimatedHumburger.svelte";
+  import AnimatedButton from "./AnimatedButton.svelte";
 
   let open = false;
   let onClick = (): void => {
@@ -29,9 +30,8 @@
         {/each}
       </ul>
     </nav>
-    <a class="button background on-background-text label-large" href="/home"
-      >Contact Us</a
-    >
+
+    <AnimatedButton buttonText={"Contact us"} href={"#footerId"} />
   </div>
   <div class="mobile-menu">
     <div class="animated-hamburger-menu">
