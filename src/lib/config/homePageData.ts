@@ -54,12 +54,12 @@ export const OUR_TOOLS_LOGOS = [
 export const NAV_ELEMENTS = [
   {
     name: "Projects",
-    url: "/page1",
+    url: "./team",
     prefetch: true,
   },
   {
     name: "Team",
-    url: "/page2",
+    url: "./team",
     prefetch: true,
   },
 ];
@@ -82,32 +82,71 @@ export const FOOTER_ELEMENTS = [
 export const TEAM_MEMBERS = [
   {
     name: "Rungui",
-    url: "/images/Ape.png",
-    description: "Lorem ipsum lorem ipsum, lorem ipsum lorem ipsum",
+    url: "/images/Rungui.jpeg",
+    description:
+      "Passionate front-end developer and UI designer with an entrepreneurial mindset",
+    socialMedias: [
+      {
+        name: "Github",
+        icon: "/images/github-logo3.png",
+        url: "https://github.com/mateoroldos",
+      },
+      {
+        name: "Linkedin",
+        icon: "/images/linkedin-icon3.png",
+        url: "https://www.linkedin.com/in/mr-webdev/",
+      },
+    ],
   },
   {
     name: "Chino",
-    url: "/images/Ape.png",
-    description: "lorem  ipsum lorem ipsum, lorem ipsum lorem ipsum",
+    url: "/images/Chino.jpeg",
+    description:
+      "Management and Administration bachelor, converted into a Full Stack Jr. Developer.",
+    socialMedias: [
+      {
+        name: "Github",
+        icon: "/images/github-logo3.png",
+        url: "https://github.com/IgnacioDebat",
+      },
+      {
+        name: "Linkedin",
+        icon: "/images/linkedin-icon3.png",
+        url: "https://www.linkedin.com/in/mr-webdev/",
+      },
+    ],
   },
   {
     name: "Ape",
     url: "/images/Ape.png",
-    description: " lorem  ipsum lorem ipsum, lorem ipsum lorem ipsum",
+    description:
+      "A highly motivated web developer with a background in communication and design. ",
+    socialMedias: [
+      {
+        name: "Github",
+        icon: "/images/github-logo3.png",
+        url: "https://www.linkedin.com/in/juan-pedro-falco-sartori",
+      },
+      {
+        name: "Linkedin",
+        icon: "/images/linkedin-icon3.png",
+        url: "https://www.linkedin.com/in/juan-pedro-falco-sartori",
+      },
+    ],
   },
 ];
 
 export const EMESTUDIO_STATS = [
   {
-    stat: "10",
-    description: "projects",
+    stat: "10+",
+    description: "Web develop projects",
   },
   {
-    stat: "10",
-    description: "projects",
+    stat: "3+",
+    description: "years working for you",
   },
   {
-    stat: "10",
-    description: "projects",
+    stat: "4+",
+    description: "example example example",
   },
 ];

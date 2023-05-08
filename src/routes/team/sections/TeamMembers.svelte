@@ -2,33 +2,57 @@
   import { TEAM_MEMBERS } from "$lib/config/homePageData";
 </script>
 
-<section class="container-small">
-  <h2 class="display-small on-background-text">Yes, we are EME</h2>
+<section class="container">
   <div class="members-wrapper">
     {#each TEAM_MEMBERS as member}
-      <div class="card">
-        <div class="card-content">
-          <h4 class="on-background-text title title-large">{member.name}</h4>
-          <img src={member.url} alt={member.name} />
-          <p class="on-background-text">{member.description}</p>
-          <div class="light-blur inverse-surface" />
+      <div class="card-wrapper">
+        <div class="card-effect">
+          <div class="card-content">
+            <h4 class="on-background-text title title-large">{member.name}</h4>
+            <img class="profile-pic" src={member.url} alt={member.name} />
+            <p class="on-background-text">{member.description}</p>
+            <div class="socialmedia-wrapper">
+              {#each member.socialMedias as socialMedia}
+                <a href={socialMedia.url} target="_blank">
+                  <img
+                    class="socialmedia-icon"
+                    src={socialMedia.icon}
+                    alt={socialMedia.name}
+                  />
+                </a>
+              {/each}
+            </div>
+          </div>
         </div>
+        <div class="card-background-effect" />
       </div>
     {/each}
   </div>
 </section>
 
 <style lang="scss">
-  .container-small {
+  .socialmedia-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 4rem;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .socialmedia-icon {
+      aspect-ratio: 1/1;
+      max-width: 1.7rem;
+      filter: brightness(100);
+    }
+  }
+
+  .socialmedia-wrapper:hover {
+    cursor: pointer;
   }
 
   .members-wrapper {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    justify-content: space-around;
+    padding-top: 2rem;
 
     @include mq("medium") {
       display: flex;
@@ -36,59 +60,58 @@
       gap: 4rem;
     }
 
-    .card {
+    .card-wrapper {
+      width: 300px;
+      height: 500px;
+      background: transparent;
+      display: flex;
+      align-items: center;
       justify-content: center;
-      transition: transform 500ms ease;
       overflow: hidden;
+      position: relative;
+      border-radius: 0.4rem;
+    }
 
-      @include mq("medium") {
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-      }
+    .card-effect {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 2rem;
+      justify-content: center;
+      background-color: var(--md-sys-color-background);
+      width: 298px;
+      height: 498px;
+      border-radius: 0.4rem;
+    }
 
-      .card-content {
-        display: flex;
-        flex-direction: column;
-        gap: 1.3rem;
-      }
+    .card-background-effect {
+      background: radial-gradient(ellipse at top, #fff 10%, transparent),
+        radial-gradient(ellipse at bottom, #000, #000);
+      min-width: 600px !important;
+      height: 600px;
+      animation: rotate 4s linear infinite;
+      z-index: -1;
+      position: absolute;
+      border-radius: 0.4rem;
+    }
 
-      .title {
-        position: relative;
-        width: max-content;
-      }
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+      text-align: center;
 
-      .title::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 2px;
-        width: 100%;
-        background-color: var(--md-sys-color-surface-tint);
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 500ms ease;
-        transition-delay: 250ms;
+      .profile-pic {
+        border-radius: 0.5rem;
       }
     }
 
-    .card:hover .title::after {
-      transform: scaleX(1);
-    }
-
-    .card:hover {
-      transform: scale(1.01);
-    }
-
-    .card:hover .card-content {
-      transform: translateY(0);
-    }
-
-    @media (hover) {
-      .card-content {
-        transform: translateY(5%);
-        transition: transform 500ms ease;
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
       }
     }
   }

@@ -1,7 +1,3 @@
-<script type="ts">
-  import Orbits from "$lib/components/Orbits.svelte";
-</script>
-
 <section class="container-small team-description">
   <h1 class="display-large on-background-text">Our team</h1>
   <p class="on-background-text">
@@ -11,7 +7,7 @@
     never grow tired of questioning ourselves and we´ll always keep searching.We
     don’t settle nor do we know the comfort zone.
   </p>
-  <Orbits />
+  <!-- <Orbits /> -->
 </section>
 
 <style lang="scss">
