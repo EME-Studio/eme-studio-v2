@@ -31,27 +31,11 @@
 </section>
 
 <style lang="scss">
-  .socialmedia-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    .socialmedia-icon {
-      aspect-ratio: 1/1;
-      max-width: 1.7rem;
-      filter: brightness(100);
-    }
-  }
-
-  .socialmedia-wrapper:hover {
-    cursor: pointer;
-  }
-
   .members-wrapper {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    justify-content: space-around;
+    align-items: center;
     padding-top: 2rem;
 
     @include mq("medium") {
@@ -113,6 +97,21 @@
       100% {
         transform: rotate(360deg);
       }
+    }
+    .socialmedia-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .socialmedia-icon {
+        aspect-ratio: 1/1;
+        max-width: 1.7rem;
+        filter: brightness(100);
+      }
+    }
+
+    .socialmedia-wrapper:hover {
+      cursor: pointer;
     }
   }
 </style>

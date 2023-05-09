@@ -1,4 +1,5 @@
 <script type="ts">
+  import EmEstudioHistory from "./sections/EMEstudioHistory.svelte";
   import TeamDescription from "./sections/TeamDescription.svelte";
   import TeamMembers from "./sections/TeamMembers.svelte";
   import TeamResumee from "./sections/TeamResumee.svelte";
@@ -8,4 +9,5 @@
 <TeamDescription />
 <TeamMembers />
 <TeamStats />
+<EmEstudioHistory />
 <TeamResumee />

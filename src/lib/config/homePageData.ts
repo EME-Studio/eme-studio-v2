@@ -138,15 +138,11 @@ export const TEAM_MEMBERS = [
 
 export const EMESTUDIO_STATS = [
   {
-    stat: "10+",
-    description: "Web develop projects",
-  },
-  {
-    stat: "3+",
-    description: "years working for you",
+    stat: "20+",
+    description: "Online projects",
   },
   {
     stat: "4+",
-    description: "example example example",
+    description: "years improving the web",
   },
 ];

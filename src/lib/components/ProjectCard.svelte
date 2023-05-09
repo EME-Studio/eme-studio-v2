@@ -8,7 +8,7 @@
   <div class="main-wrapper card">
     <h3 class="headline-small primary-text">{projectOverview.title}</h3>
     <h4 class="body-large on-background-text">{projectOverview.year}</h4>
-    <Video url={projectOverview.img} />
+    <Video url={projectOverview.video} />
     <div class="tags-wrapper">
       {#each projectOverview.tags as tag}
         <span class="primary-text">{tag}</span>

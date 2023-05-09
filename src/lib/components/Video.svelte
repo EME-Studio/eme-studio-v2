@@ -3,7 +3,7 @@
 </script>
 
 <div>
-  <video src={url} muted autoplay loop>
+  <video src={url} muted loop autoplay>
     <track kind="captions" />
   </video>
 </div>

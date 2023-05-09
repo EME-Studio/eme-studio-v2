@@ -5,6 +5,7 @@
 <section class="surface">
   <div class="container">
     <div class="stats-wrapper">
+      <img src="/images/EMEstudio_logo_blanco.png" alt="EMEstudio logo" />
       {#each EMESTUDIO_STATS as stat}
         <div class="individual-stat-wrapper on-background-text">
           <h3 class="display-large on-background-text">{stat.stat}</h3>
@@ -26,6 +27,11 @@
     justify-content: space-around;
     text-align: center;
     position: relative;
+
+    img {
+      max-width: 20rem;
+      border-right: solid 0.1rem white;
+    }
   }
 
   .light-blur {
