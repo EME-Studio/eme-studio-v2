@@ -23,25 +23,33 @@
     gap: 2rem;
     padding: 5rem;
 
+    div:last-child {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-around;
+      align-items: center;
+    }
+
     @include mq("medium") {
       display: flex;
       flex-direction: row;
       gap: 3rem;
+
       p {
         width: 70%;
       }
+    }
 
-      div:last-child {
-        display: flex;
-        gap: 2rem;
-        align-items: center;
-      }
+    div:last-child {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
 
-      img {
-        max-height: 3rem;
-        max-width: 6rem;
-        aspect-ratio: inherit;
-      }
+    img {
+      max-height: 3rem;
+      max-width: 6rem;
+      aspect-ratio: inherit;
     }
   }
 </style>
