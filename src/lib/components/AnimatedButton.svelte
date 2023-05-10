@@ -20,6 +20,7 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
+    transition: 0.3s;
 
     a {
       text-decoration: none;

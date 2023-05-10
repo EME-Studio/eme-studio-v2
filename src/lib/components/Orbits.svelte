@@ -1,11 +1,19 @@
+<script type="ts">
+  let orbits = [
+    "xxsmall",
+    "xsmall",
+    "small",
+    "medium",
+    "large",
+    "xlarge",
+    "xxlarge",
+  ];
+</script>
+
 <div class="circles-wrapper center">
-  <div class="circle xxlarge center" />
-  <div class="circle xlarge center" />
-  <div class="circle large center" />
-  <div class="circle medium center" />
-  <div class="circle small center" />
-  <div class="circle xsmall center" />
-  <div class="circle xxsmall center" />
+  {#each orbits as orbit}
+    <div class="circle {orbit} center" />
+  {/each}
 </div>
 
 <style lang="scss">
@@ -16,6 +24,7 @@
     height: 1000px;
     width: 100%;
     overflow: hidden;
+    z-index: -1;
   }
 
   .circle {
@@ -61,7 +70,6 @@
     opacity: 15%;
     width: 450px;
     height: 450px;
-
     animation-name: orbit-move;
     animation-duration: 6s;
     animation-iteration-count: infinite;

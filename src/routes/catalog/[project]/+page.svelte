@@ -1,8 +1,8 @@
 <script lang="ts">
-  import ProjectCategoryTag from "$lib/components/ProjectCategoryTag.svelte";
+  import CategoryTag from "$lib/components/CategoryTag.svelte";
+  import Tag from "$lib/components/CategoryTag.svelte";
 
   export let data;
-  console.log(data);
 </script>
 
 <section>
@@ -12,7 +12,7 @@
       <h4 class="on-background-text">{data.metadata.date}</h4>
       <div class="tags-wrapper">
         {#each data.metadata.tags as tag}
-          <ProjectCategoryTag title={tag} />
+          <CategoryTag title={tag} />
         {/each}
       </div>
       <p class="on-background-text">{data.metadata.excerpt}</p>
@@ -20,7 +20,7 @@
   </div>
 </section>
 <section>
-  <img src={data.metadata.videolink} alt="example" />
+  <img class="container" src={data.metadata.videolink} alt="example" />
   <article>
     <div class="container-small">
       <svelte:component this={data.content} />
@@ -52,7 +52,6 @@
   }
 
   img {
-    width: 100%;
-    max-height: 60rem;
+    border-radius: 1.5rem;
   }
 </style>

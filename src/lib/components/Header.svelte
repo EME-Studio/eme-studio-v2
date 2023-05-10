@@ -69,7 +69,7 @@
         display: flex;
         flex-direction: row;
         padding: 0.5rem 3rem;
-        border-radius: 1.5rem;
+        border-radius: 3rem;
         justify-content: space-around;
         align-items: center;
         gap: 6rem;
