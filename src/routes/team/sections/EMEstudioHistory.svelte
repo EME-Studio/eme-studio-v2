@@ -4,11 +4,11 @@
 <section class="container-small">
   <div class="content-wrapper">
     <div class="text-wrapper on-background-text">
-      <h4 class="display-medium">From passion to EMEstudio</h4>
+      <h4 class="display-medium">Experience EMEstudio</h4>
       <p>
-        Here we are going to describe a little bit of our company and how you
-        made your dream come true Here we are going to describe a little bit of
-        our company and how you made your dream come true
+        With our unwavering commitment to excellence, we create modern websites
+        that not only reflect your unique vision but also engage users with
+        seamless functionality and a user-friendly experience.
       </p>
     </div>
 

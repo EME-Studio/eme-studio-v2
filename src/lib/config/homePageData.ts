@@ -24,11 +24,13 @@ export const OUR_SERVICES = [
   },
   {
     title: "Mobile Development",
-    description: "We build websites that are fast, secure and easy to use.",
+    description:
+      "We create intuitive and feature-rich mobile applications that engage users on the go",
   },
   {
     title: "UI/UX Design",
-    description: "We build websites that are fast, secure and easy to use.",
+    description:
+      "We bring elegance and usability together creating delightful user experiences.",
   },
 ];
 

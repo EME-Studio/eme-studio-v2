@@ -2,8 +2,9 @@
   <div class="container">
     <div class="left-column-wrapper">
       <h2 class="display-medium">Our team</h2>
-      <h5 class="headline-medium">
-        We're amultidisciplinary team focused on building solutions
+      <h5 class="body-large">
+        We're amultidisciplinary team driven by a passion for pushing boundaries
+        and delivering exceptional digital solutions
       </h5>
     </div>
     <div class="right-column-wrapper">
