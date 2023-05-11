@@ -18,14 +18,15 @@
       display: flex;
       flex-direction: column;
       gap: 5rem;
+      text-align: center;
 
       @include mq("medium") {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5rem;
         padding: 3rem;
+        text-align: left;
       }
-
       .left-column-wrapper {
         display: flex;
         flex-direction: column;

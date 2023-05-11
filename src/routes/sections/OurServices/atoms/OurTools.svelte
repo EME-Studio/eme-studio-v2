@@ -22,6 +22,7 @@
     flex-direction: column;
     gap: 2rem;
     padding: 5rem;
+    text-align: center;
 
     div:last-child {
       display: flex;
@@ -34,6 +35,7 @@
       display: flex;
       flex-direction: row;
       gap: 3rem;
+      text-align: left;
 
       p {
         width: 70%;

@@ -88,6 +88,7 @@
         border-radius: 0.5rem;
         text-decoration: none;
         text-align: center;
+        margin-block: 0;
       }
 
       input[type="submit"]:hover {
