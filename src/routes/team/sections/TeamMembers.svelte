@@ -18,7 +18,6 @@
     gap: 3rem;
     align-items: center;
     justify-content: space-around;
-    padding-top: 2rem;
 
     @include mq("medium") {
       display: flex;

@@ -2,7 +2,7 @@
   import Video from "$lib/components/Video.svelte";
 </script>
 
-<section class="container-small content-wrapper">
+<section class="container content-wrapper">
   <div class="title-wrapper">
     <h3 class="display-medium on-background-text">This is us</h3>
     <p class="body-large on-background-text">
@@ -21,7 +21,7 @@
       flex-direction: column;
       gap: 2rem;
       text-align: center;
-      padding: 3rem;
+      padding: 0 3rem 3rem 3rem;
     }
   }
 </style>

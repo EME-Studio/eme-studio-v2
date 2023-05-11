@@ -4,33 +4,31 @@
   export let teamMember: TeamMembers;
 </script>
 
-<section class="container">
-  <div class="members-wrapper">
-    <div class="card-wrapper">
-      <div class="card-effect">
-        <div class="card-content">
-          <h4 class="on-background-text title title-large">
-            {teamMember.name}
-          </h4>
-          <img class="profile-pic" src={teamMember.url} alt={teamMember.name} />
-          <p class="on-background-text">{teamMember.description}</p>
-          <div class="socialmedia-wrapper">
-            {#each teamMember.socialMedias as socialMedia}
-              <a href={socialMedia.url} target="_blank">
-                <img
-                  class="socialmedia-icon"
-                  src={socialMedia.icon}
-                  alt={socialMedia.name}
-                />
-              </a>
-            {/each}
-          </div>
+<div class="members-wrapper">
+  <div class="card-wrapper">
+    <div class="card-effect">
+      <div class="card-content">
+        <h4 class="on-background-text title title-large">
+          {teamMember.name}
+        </h4>
+        <img class="profile-pic" src={teamMember.url} alt={teamMember.name} />
+        <p class="on-background-text">{teamMember.description}</p>
+        <div class="socialmedia-wrapper">
+          {#each teamMember.socialMedias as socialMedia}
+            <a href={socialMedia.url} target="_blank">
+              <img
+                class="socialmedia-icon"
+                src={socialMedia.icon}
+                alt={socialMedia.name}
+              />
+            </a>
+          {/each}
         </div>
       </div>
-      <div class="card-background-effect" />
     </div>
+    <div class="card-background-effect" />
   </div>
-</section>
+</div>
 
 <style lang="scss">
   .members-wrapper {
@@ -39,7 +37,6 @@
     gap: 3rem;
     align-items: center;
     justify-content: space-around;
-    padding-top: 2rem;
 
     @include mq("medium") {
       display: flex;

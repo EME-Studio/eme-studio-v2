@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <section class="container-small">
   <div class="content-wrapper">
     <div class="text-wrapper on-background-text">
