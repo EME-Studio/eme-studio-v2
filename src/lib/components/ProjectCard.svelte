@@ -1,4 +1,4 @@
-<script type="ts">
+<script type="ts" src="https://player.vimeo.com/api/player.js">
   import type { ProjectOverview } from "$lib/types/project-overview.interface";
   import CategoryTag from "./CategoryTag.svelte";
   export let projectOverview: ProjectOverview;
@@ -8,10 +8,8 @@
   <div class="main-wrapper card">
     <h3 class="headline-small primary-text">{projectOverview.title}</h3>
     <h4 class="body-large on-background-text">{projectOverview.year}</h4>
-    <div class="video-wrapper">
-      <video class="video" src={projectOverview.img} muted autoplay loop>
-        <track kind="captions" />
-      </video>
+    <div class="img-wrapper">
+      <img src={projectOverview.img} alt={projectOverview.title} />
     </div>
     <div class="tags-wrapper">
       {#each projectOverview.tags as tag}
@@ -47,10 +45,10 @@
       -webkit-box-orient: vertical;
     }
 
-    .video-wrapper {
+    .img-wrapper {
       position: relative;
 
-      video {
+      img {
         width: 100%;
         border-radius: 0.5rem;
       }

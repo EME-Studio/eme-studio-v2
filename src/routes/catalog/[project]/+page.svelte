@@ -1,6 +1,5 @@
 <script lang="ts">
   import CategoryTag from "$lib/components/CategoryTag.svelte";
-  import Tag from "$lib/components/CategoryTag.svelte";
 
   export let data;
 </script>
@@ -20,7 +19,16 @@
   </div>
 </section>
 <section>
-  <img class="container" src={data.metadata.videolink} alt="example" />
+  <div style="padding:57.01% 0 0 0;position:relative;" class="container">
+    <iframe
+      src={data.metadata.videolink}
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+      title="EAvideoforweb"
+    />
+  </div>
   <article>
     <div class="container-small">
       <svelte:component this={data.content} />
@@ -51,7 +59,7 @@
     }
   }
 
-  img {
+  iframe {
     border-radius: 1.5rem;
   }
 </style>
