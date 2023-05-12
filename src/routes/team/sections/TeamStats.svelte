@@ -23,6 +23,7 @@
   .surface {
     margin: 6rem 0;
   }
+
   .stats-wrapper {
     display: flex;
     flex-direction: row;

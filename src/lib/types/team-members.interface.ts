@@ -2,10 +2,10 @@ export interface TeamMembers {
   name: string;
   url: string;
   description: string;
-  socialMedias: socialMedias[];
+  socialMedias: socialMedia[];
 }
 
-interface socialMedias {
+interface socialMedia {
   name: string;
   icon: string;
   url: string;
