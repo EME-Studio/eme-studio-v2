@@ -8,9 +8,9 @@
   </h1>
 
   <p class="on-background-text">
-    NuxtLabs is the bridge between open-source software development and
-    enterprise-grade web services. We provide a complete set of solutions to
-    every company that wants to harness the full power of Vue and Nuxt.
+    We specialize in designing and developing cutting-edge websites. We deliver
+    holistic solutions, combining visually stunning designs with the latest web
+    technologies.
   </p>
 
   <Orbits />

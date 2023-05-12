@@ -38,7 +38,7 @@
 
 <style lang="scss">
   .container-small {
-    padding: 2rem;
+    padding-top: 2rem;
 
     .title {
       display: flex;

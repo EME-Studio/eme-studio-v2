@@ -25,10 +25,6 @@
     gap: 1rem;
     margin: 6rem 0 0 0;
 
-    p {
-      text-align: center;
-    }
-
     .data {
       display: flex;
       flex-direction: row;
@@ -37,7 +33,13 @@
       .name {
         display: flex;
         flex-direction: column;
-        margin-left: 2rem;
+        text-align: left;
+        margin-left: 1rem;
+        gap: 0.5rem;
+
+        p {
+          margin: 0;
+        }
       }
 
       .image {

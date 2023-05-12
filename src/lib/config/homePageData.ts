@@ -24,42 +24,44 @@ export const OUR_SERVICES = [
   },
   {
     title: "Mobile Development",
-    description: "We build websites that are fast, secure and easy to use.",
+    description:
+      "We create intuitive and feature-rich mobile applications that engage users on the go",
   },
   {
     title: "UI/UX Design",
-    description: "We build websites that are fast, secure and easy to use.",
+    description:
+      "We bring elegance and usability together creating delightful user experiences.",
   },
 ];
 
 export const OUR_TOOLS_LOGOS = [
   {
-    imageUrl: "/images/jslogo.png",
-    alt: "JS logo",
+    imageUrl: "/images/appleLogo.png",
+    alt: "Apple logo",
   },
   {
-    imageUrl: "/images/figmalogo.png",
-    alt: "Figma logo",
+    imageUrl: "/images/appleLogo.png",
+    alt: "Apple logo",
   },
   {
-    imageUrl: "/images/htmllogo.png",
-    alt: "HTML logo",
+    imageUrl: "/images/appleLogo.png",
+    alt: "Apple logo",
   },
   {
-    imageUrl: "/images/csslogo.png",
-    alt: "Css logo",
+    imageUrl: "/images/appleLogo.png",
+    alt: "Apple logo",
   },
 ];
 
 export const NAV_ELEMENTS = [
   {
     name: "Projects",
-    url: "/page1",
+    url: "./team",
     prefetch: true,
   },
   {
     name: "Team",
-    url: "/page2",
+    url: "./team",
     prefetch: true,
   },
 ];
@@ -76,5 +78,73 @@ export const FOOTER_ELEMENTS = [
   {
     name: "Instagram",
     url: "/instagram.com",
+  },
+];
+
+export const TEAM_MEMBERS = [
+  {
+    name: "Rungui",
+    url: "/images/Rungui.jpeg",
+    description:
+      "Passionate front-end developer and UI designer with an entrepreneurial mindset",
+    socialMedias: [
+      {
+        name: "Github",
+        icon: "/images/github-logo3.png",
+        url: "https://github.com/mateoroldos",
+      },
+      {
+        name: "Linkedin",
+        icon: "/images/linkedin-icon3.png",
+        url: "https://www.linkedin.com/in/mr-webdev/",
+      },
+    ],
+  },
+  {
+    name: "Chino",
+    url: "/images/Chino.jpeg",
+    description:
+      "Management and Administration bachelor, converted into a Full Stack Jr. Developer.",
+    socialMedias: [
+      {
+        name: "Github",
+        icon: "/images/github-logo3.png",
+        url: "https://github.com/IgnacioDebat",
+      },
+      {
+        name: "Linkedin",
+        icon: "/images/linkedin-icon3.png",
+        url: "https://www.linkedin.com/in/mr-webdev/",
+      },
+    ],
+  },
+  {
+    name: "Ape",
+    url: "/images/Ape.png",
+    description:
+      "A highly motivated web developer with a background in communication and design. ",
+    socialMedias: [
+      {
+        name: "Github",
+        icon: "/images/github-logo3.png",
+        url: "https://www.linkedin.com/in/juan-pedro-falco-sartori",
+      },
+      {
+        name: "Linkedin",
+        icon: "/images/linkedin-icon3.png",
+        url: "https://www.linkedin.com/in/juan-pedro-falco-sartori",
+      },
+    ],
+  },
+];
+
+export const EMESTUDIO_STATS = [
+  {
+    stat: "20+",
+    description: "Online projects",
+  },
+  {
+    stat: "4+",
+    description: "years improving the web",
   },
 ];

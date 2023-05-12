@@ -13,7 +13,6 @@
     </div>
     <div class="tags-wrapper">
       {#each projectOverview.tags as tag}
-        <!-- <span class="primary-text">{tag}</span> -->
         <CategoryTag title={tag} />
       {/each}
     </div>

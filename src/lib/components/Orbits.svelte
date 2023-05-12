@@ -84,18 +84,6 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
-  .circle.xlarge {
-    width: 750px;
-    height: 750px;
-    opacity: 3%;
-  }
-
-  .circle.xxlarge {
-    box-sizing: border-box;
-    width: 900px;
-    height: 900px;
-    opacity: 2%;
-  }
 
   .center {
     align-items: center;
