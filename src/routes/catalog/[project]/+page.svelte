@@ -18,8 +18,6 @@
       <p class="on-background-text">{data.metadata.excerpt}</p>
     </div>
   </div>
-</section>
-<section>
   <img src={data.metadata.videolink} alt="example" />
   <article>
     <div class="container-small">
@@ -30,7 +28,7 @@
 
 <style lang="scss">
   .container-small {
-    padding: 2rem;
+    padding-top: 2rem;
 
     .title {
       display: flex;
@@ -53,6 +51,9 @@
 
   img {
     width: 100%;
-    max-height: 60rem;
+    object-fit: cover;
+    object-position: top;
+    max-height: 500px;
+    margin-top: 6rem;
   }
 </style>

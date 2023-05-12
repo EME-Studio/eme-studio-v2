@@ -17,14 +17,15 @@
 
 <header>
   <div class="desktop-menu surface-tint">
-    <a href="/" class="on-secondary-text"
+    <a href="./" class="on-secondary-text"
       ><img src="/images/EMEstudio_iso_negro.png" alt="logo" /></a
     >
     <nav>
       <ul>
         {#each NAV_ELEMENTS as element}
           <li>
-            <a class="on-secondary-text" href="/">{element.name}</a>
+            <a class="on-secondary-text" href="/{element.url}">{element.name}</a
+            >
           </li>
         {/each}
       </ul>

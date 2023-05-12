@@ -6,7 +6,7 @@
   <div>
     <h4 class="headline-large on-background-text">Tools we use</h4>
     <p class="on-background-text">
-      we use modern tools to help us craft the best experience for your users
+      We use modern tools to help us craft the best experience for your users
     </p>
   </div>
   <div>

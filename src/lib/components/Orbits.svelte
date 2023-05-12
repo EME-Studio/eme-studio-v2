@@ -1,6 +1,4 @@
 <div class="circles-wrapper center">
-  <div class="circle xxlarge center" />
-  <div class="circle xlarge center" />
   <div class="circle large center" />
   <div class="circle medium center" />
   <div class="circle small center" />
@@ -75,18 +73,6 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-  }
-  .circle.xlarge {
-    width: 750px;
-    height: 750px;
-    opacity: 3%;
-  }
-
-  .circle.xxlarge {
-    box-sizing: border-box;
-    width: 900px;
-    height: 900px;
-    opacity: 2%;
   }
 
   .center {

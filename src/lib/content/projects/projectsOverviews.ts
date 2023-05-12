@@ -6,7 +6,7 @@ export const projectsOverviews: ProjectOverview[] = [
     title: "Emerald Academy",
     year: 2023,
     url: "emerald-academy",
-    img: "/images/videoExample.mov",
+    video: "/videos/EAvideoforweb.mp4",
     tags: [ProjectCategoryEnum.Development, ProjectCategoryEnum.WebsiteDesign],
     excerpt:
       "Emerald Academy is the most active community for learning and building on the flow blockchain. Our main challenge was to create a great platform full of content: bootcamps, courses, roadmaps in several languages, accessible for everyone",
@@ -15,7 +15,7 @@ export const projectsOverviews: ProjectOverview[] = [
     title: "Project-2",
     year: 2022,
     url: "project-2",
-    img: "/images/web-design-project.webp",
+    video: "/images/web-design-project.webp",
     tags: [ProjectCategoryEnum.Development, ProjectCategoryEnum.WebsiteDesign],
     excerpt:
       "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem",
@@ -24,7 +24,7 @@ export const projectsOverviews: ProjectOverview[] = [
     title: "Prueba3",
     year: 2020,
     url: "project-1",
-    img: "/images/web-design-project.webp",
+    video: "/images/web-design-project.webp",
     tags: [ProjectCategoryEnum.Development, ProjectCategoryEnum.WebsiteDesign],
     excerpt:
       "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem",
@@ -33,7 +33,7 @@ export const projectsOverviews: ProjectOverview[] = [
     title: "Prueba4",
     year: 2020,
     url: "project-2",
-    img: "/images/web-design-project.webp",
+    video: "/images/web-design-project.webp",
     tags: [ProjectCategoryEnum.Development, ProjectCategoryEnum.WebsiteDesign],
     excerpt:
       "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem",
