@@ -1,6 +1,6 @@
-<script type="ts">
+<script type="ts" src="https://player.vimeo.com/api/player.js">
   import type { ProjectOverview } from "$lib/types/project-overview.interface";
-  import Video from "$lib/components/Video.svelte";
+  import CategoryTag from "./CategoryTag.svelte";
   export let projectOverview: ProjectOverview;
 </script>
 
@@ -8,10 +8,12 @@
   <div class="main-wrapper card">
     <h3 class="headline-small primary-text">{projectOverview.title}</h3>
     <h4 class="body-large on-background-text">{projectOverview.year}</h4>
-    <Video url={projectOverview.video} />
+    <div class="img-wrapper">
+      <img src={projectOverview.img} alt={projectOverview.title} />
+    </div>
     <div class="tags-wrapper">
       {#each projectOverview.tags as tag}
-        <span class="primary-text">{tag}</span>
+        <CategoryTag title={tag} />
       {/each}
     </div>
     <p class="on-background-text">{projectOverview.excerpt}</p>
@@ -42,10 +44,13 @@
       -webkit-box-orient: vertical;
     }
 
-    span {
-      border: var(--md-sys-color-primary) 1px solid;
-      border-radius: 0.8rem;
-      padding: 0.4rem;
+    .img-wrapper {
+      position: relative;
+
+      img {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
     }
   }
 </style>

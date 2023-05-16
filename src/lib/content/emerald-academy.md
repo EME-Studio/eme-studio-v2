@@ -2,7 +2,7 @@
 title: Emerald Academy
 date: February 2023
 excerpt: Emerald Academy is the most active community for learning and building on the flow blockchain. Our main challenge was to create a great platform full of content, bootcamps, courses and roadmaps in several languages, accessible for everyone
-videolink: "/images/Emerald-Academy.png"
+videolink: "https://player.vimeo.com/video/825183977?h=4173f06395&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
 tags: ["Development", "Development"]
 ---
 

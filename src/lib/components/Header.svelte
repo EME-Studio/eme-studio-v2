@@ -2,6 +2,7 @@
   import { NAV_ELEMENTS } from "$lib/config/homePageData";
   import { fly } from "svelte/transition";
   import AnimatedHumburger from "./AnimatedHumburger.svelte";
+  import AnimatedButton from "./AnimatedButton.svelte";
 
   let open = false;
   let onClick = (): void => {
@@ -30,23 +31,28 @@
         {/each}
       </ul>
     </nav>
-    <a class="button background on-background-text label-large" href="/home"
-      >Contact Us</a
-    >
+
+    <AnimatedButton buttonText={"Contact us"} href={"#footerId"} />
   </div>
   <div class="mobile-menu">
-    <AnimatedHumburger {open} {onClick} />
-    {#if open}
-      <nav transition:fly={{ y: -200, duration: 400 }}>
-        {#each NAV_ELEMENTS as navElements}
-          <li>
-            <a class="on-background-text display-large" href="/"
-              >{navElements.name}</a
-            >
-          </li>
-        {/each}
-      </nav>
-    {/if}
+    <div class="animated-hamburger-menu">
+      <AnimatedHumburger {open} {onClick} />
+      {#if open}
+        <nav transition:fly={{ y: -200, duration: 400 }}>
+          {#each NAV_ELEMENTS as navElements}
+            <li>
+              <a class="on-background-text display-small" href="/"
+                >{navElements.name}</a
+              >
+            </li>
+          {/each}
+        </nav>
+      {/if}
+    </div>
+
+    <a href="/" class="on-secondary-text eme-logo-mobile"
+      ><img src="/images/EMEstudio_iso_blanco.png" alt="logo" /></a
+    >
   </div>
 </header>
 
@@ -64,7 +70,7 @@
         display: flex;
         flex-direction: row;
         padding: 0.5rem 3rem;
-        border-radius: 1.5rem;
+        border-radius: 3rem;
         justify-content: space-around;
         align-items: center;
         gap: 6rem;
@@ -92,17 +98,28 @@
       }
 
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0.5rem 3rem;
 
-      nav {
-        height: 100vh;
-      }
-
-      li {
+      .animated-hamburger-menu {
         display: flex;
         flex-direction: column;
-        padding: 2rem;
+        align-items: left;
+
+        nav {
+          height: 100vh;
+        }
+
+        li {
+          display: flex;
+          flex-direction: column;
+          padding: 2rem;
+        }
+      }
+
+      .eme-logo-mobile {
+        margin-top: 1rem;
       }
     }
   }

@@ -1,7 +1,3 @@
-<script type="ts">
-  import Video from "$lib/components/Video.svelte";
-</script>
-
 <section class="container content-wrapper">
   <div class="title-wrapper">
     <h3 class="display-medium on-background-text">This is us</h3>
@@ -11,7 +7,6 @@
       your digital presence to new heights.
     </p>
   </div>
-  <Video url="/images/videoExample.mov" />
 </section>
 
 <style lang="scss">

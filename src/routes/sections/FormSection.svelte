@@ -21,7 +21,7 @@
   }
 </script>
 
-<section class="surface-tint">
+<section class="surface-tint" id="footerId">
   <div class="container">
     <h2 class="headline-large">
       Let's bring it <br /> to life together
@@ -88,6 +88,7 @@
         border-radius: 0.5rem;
         text-decoration: none;
         text-align: center;
+        margin-block: 0;
       }
 
       input[type="submit"]:hover {

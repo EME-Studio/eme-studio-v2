@@ -36,15 +36,15 @@
       flex-direction: column;
       gap: 4rem;
 
-      .low-opacity {
-        opacity: 0.6;
-        transition: opacity 1s;
-      }
-
       @include mq("medium") {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0 10rem;
+
+        .low-opacity {
+          opacity: 0.6;
+          transition: opacity 1s;
+        }
 
         .right-column {
           margin-top: 100px;

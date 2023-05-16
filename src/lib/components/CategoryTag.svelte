@@ -8,6 +8,6 @@
   span {
     border: var(--md-sys-color-primary) 1px solid;
     border-radius: 0.8rem;
-    padding: 0.4rem;
+    padding: 0.6em 1.4em;
   }
 </style>

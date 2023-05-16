@@ -1,8 +1,7 @@
 <script lang="ts">
-  import ProjectCategoryTag from "$lib/components/ProjectCategoryTag.svelte";
+  import CategoryTag from "$lib/components/CategoryTag.svelte";
 
   export let data;
-  console.log(data);
 </script>
 
 <section>
@@ -12,13 +11,24 @@
       <h4 class="on-background-text">{data.metadata.date}</h4>
       <div class="tags-wrapper">
         {#each data.metadata.tags as tag}
-          <ProjectCategoryTag title={tag} />
+          <CategoryTag title={tag} />
         {/each}
       </div>
       <p class="on-background-text">{data.metadata.excerpt}</p>
     </div>
   </div>
-  <img src={data.metadata.videolink} alt="example" />
+</section>
+<section>
+  <div style="padding:57.01% 0 0 0;position:relative;" class="container">
+    <iframe
+      src={data.metadata.videolink}
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+      title="EAvideoforweb"
+    />
+  </div>
   <article>
     <div class="container-small">
       <svelte:component this={data.content} />
@@ -49,11 +59,7 @@
     }
   }
 
-  img {
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-    max-height: 500px;
-    margin-top: 6rem;
+  iframe {
+    border-radius: 1.5rem;
   }
 </style>

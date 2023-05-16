@@ -9,7 +9,7 @@
       We use modern tools to help us craft the best experience for your users
     </p>
   </div>
-  <div>
+  <div class="logos-wrapper">
     {#each OUR_TOOLS_LOGOS as logo}
       <img src={logo.imageUrl} alt={logo.alt} />
     {/each}
@@ -22,11 +22,21 @@
     flex-direction: column;
     gap: 2rem;
     padding: 5rem;
+    text-align: center;
+
+    div:last-child {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-around;
+      align-items: center;
+    }
 
     @include mq("medium") {
       display: flex;
       flex-direction: row;
       gap: 3rem;
+      text-align: left;
+
       p {
         width: 70%;
       }
@@ -35,12 +45,13 @@
     div:last-child {
       display: flex;
       gap: 2rem;
-      align-items: flex-end;
-      flex-wrap: wrap;
+      align-items: center;
+    }
 
-      img {
-        max-width: 3rem;
-      }
+    img {
+      max-height: 3rem;
+      max-width: 6rem;
+      aspect-ratio: inherit;
     }
   }
 </style>

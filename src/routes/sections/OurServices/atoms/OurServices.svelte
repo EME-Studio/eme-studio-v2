@@ -33,60 +33,60 @@
       flex-direction: column;
       gap: 3rem;
 
-      .title {
-        position: relative;
-        width: max-content;
-      }
-
-      .title::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 2px;
-        width: 100%;
-        background-color: var(--md-sys-color-inverse-surface);
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 500ms ease;
-        transition-delay: 250ms;
-      }
-
-      .card {
-        justify-content: center;
-        transition: transform 500ms ease;
-        overflow: hidden;
-
-        .card-content {
-          display: flex;
-          flex-direction: column;
-          gap: 1.3rem;
-        }
-      }
-
-      .card:hover .title::after {
-        transform: scaleX(1);
-      }
-
-      .card:hover {
-        transform: scale(1.01);
-      }
-
-      .card:hover .card-content {
-        transform: translateY(0);
-      }
-
-      @media (hover) {
-        .card-content {
-          transform: translateY(90%);
-          transition: transform 500ms ease;
-        }
-      }
-
       @include mq("medium") {
         display: flex;
         flex-direction: row;
         gap: 3rem;
+
+        .title {
+          position: relative;
+          width: max-content;
+        }
+
+        .title::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          width: 100%;
+          background-color: var(--md-sys-color-inverse-surface);
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 500ms ease;
+          transition-delay: 250ms;
+        }
+
+        .card {
+          justify-content: center;
+          transition: transform 500ms ease;
+          overflow: hidden;
+
+          .card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.3rem;
+          }
+        }
+
+        .card:hover .title::after {
+          transform: scaleX(1);
+        }
+
+        .card:hover {
+          transform: scale(1.01);
+        }
+
+        .card:hover .card-content {
+          transform: translateY(0);
+        }
+
+        @media (hover) {
+          .card-content {
+            transform: translateY(90%);
+            transition: transform 500ms ease;
+          }
+        }
 
         .light-blur {
           width: 100px;
